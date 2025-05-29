@@ -1,0 +1,15 @@
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let raza of razasPerros">
+      <ion-thumbnail slot="start">
+        <img [src]="raza.imagen || 'ruta/por_defecto.jpg'" alt="{{ raza.nombre }}" />
+      </ion-thumbnail>
+      <ion-label>
+        <h2>{{ raza.nombre }}</h2>
+        <p>Tamaño: {{ raza.tamano }}</p>
+        <p>Carácter: {{ raza.caracter }}</p>
+        <p>Promedio de vida: {{ raza.promedioVida }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

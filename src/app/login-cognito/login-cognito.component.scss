@@ -1,0 +1,42 @@
+.fondo {
+  background-image: url("../../assets/iStock-518012153.jpg");
+  --background: linear-gradient(180deg, #ffded4, #ec9955);
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  padding-top: 5rem;
+}
+
+.imagen-izquierda img {
+  width: 700px;
+  max-width: 40vw;
+}
+
+.contenido-central {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.logo {
+  width: 300px;
+}
+
+.titulo {
+  font-size: 4rem;
+  font-weight: bold;
+  color: rgb(30, 62, 204);
+}
+
+.botonInicio {
+  --background: #d3743c;
+  --color: #000000;
+  font-weight: bold;
+}
