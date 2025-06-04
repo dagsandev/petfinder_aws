@@ -37,8 +37,10 @@ export const environment = {
   cognito: {
     domain: 'https://cognito-idp.us-east-1.amazonaws.com/us-east-1_TNM3wqqf8',
     clientId: '4hg4dihcralsa2udctlncg2ns1',
-    redirectUri: 'http://localhost:8100/tabs',
-    postLogoutRedirectUri: 'http://localhost:8100/login',
+    redirectUri: 'https://main.d2t9i4brlk3x5o.amplifyapp.com/tabs/tab1',
+    postLogoutRedirectUri: 'https://main.d2t9i4brlk3x5o.amplifyapp.com/login',
+    // redirectUri: 'http://localhost:8100/tabs',
+    // postLogoutRedirectUri: 'http://localhost:8100/login',
     scope: 'openid email phone',
     responseType: 'code'
   }
