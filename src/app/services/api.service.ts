@@ -2,6 +2,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
 
 /**
  * Servicio para interactuar con la API de Dog CEO.
@@ -11,7 +12,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ApiService {
-  private baseUrl = 'https://dog.ceo/api/';
+  private baseUrl = environment.apiUrl;
 
   /**
    * Crea una instancia del servicio ApiService.
