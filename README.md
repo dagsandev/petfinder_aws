@@ -1,17 +1,21 @@
 # Pet Finder
 
 ## Introducción
-Aplicación académica para la materia 'Desarrollo de Aplicaciónes para Dispositivos Móviles"
+Reutilización del proyecto "Pet Finder" desarrollado en la materia "Desarrollo de Aplicaciónes para Dispositivos Móviles", donde ahora lo estamos usando en la materia "Desarrollo e implementación de sistemas en la nube" donde estamos utilizando servicios del laboratorio gratuito y educativo de AWS.
 
 ## Tecnologías utilizadas
 * Typescript
 * Angular
 * Ionic
+* AWS Cognito
+* AWS Amplify
 
 ## Consumo de API pública
-Una de las condiciones es consumir una api pública, la elegida por nosotros: `https://dog.ceo/dog-api/documentation/` 
+`https://dog.ceo/dog-api/documentation/` 
 
---------------------------
-readme en construcción
-
+## Consumo de API pública
+Integrantes:
+Bleile, Franco
+Daglio, Santiago
+Zamojski, Paula
 
