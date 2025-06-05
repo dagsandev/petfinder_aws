@@ -3,6 +3,8 @@ import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../services/api.service';
 import { datosRazas } from '../services/datosRaza';
 
+const imagenPorDefecto = './assets/iStock-518012153.jpg';
+
 /**
  * Componente para mostrar la lista de razas de perros.
  * Permite expandir cada raza para mostrar información adicional.
@@ -37,6 +39,7 @@ export class Tab2Page implements OnInit {
         },
         (error) => {
           console.error('Error al obtener imagen para la raza', perro.nombre, error);
+          perro.imagen = imagenPorDefecto;
         }
       );
     });
