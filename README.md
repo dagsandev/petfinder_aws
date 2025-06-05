@@ -14,7 +14,7 @@ Reutilización del proyecto "Pet Finder" desarrollado en la materia "Desarrollo 
 `https://dog.ceo/dog-api/documentation/` 
 
 ## Integrantes:
-Bleile, Franco
-Daglio, Santiago
-Zamojski, Paula
+* Bleile, Franco
+* Daglio, Santiago
+* Zamojski, Paula
 
