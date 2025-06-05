@@ -35,8 +35,8 @@ export const environment = {
 
   // Cognito config para auth/login
   cognito: {
-    domain: 'https://cognito-idp.us-east-1.amazonaws.com/us-east-1_TNM3wqqf8',
-    //domain: 'https://us-east-1vzbsecktm.auth.us-east-1.amazoncognito.com',
+    //domain: 'https://cognito-idp.us-east-1.amazonaws.com/us-east-1_TNM3wqqf8',
+    domain: 'us-east-1vzbsecktm.auth.us-east-1.amazoncognito.com',
     clientId: '4hg4dihcralsa2udctlncg2ns1',
     redirectUri: 'https://main.d2t9i4brlk3x5o.amplifyapp.com/tabs/tab1',
     postLogoutRedirectUri: 'https://main.d2t9i4brlk3x5o.amplifyapp.com/login',
