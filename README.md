@@ -11,10 +11,10 @@ Reutilización del proyecto "Pet Finder" desarrollado en la materia "Desarrollo 
 * AWS Amplify
 
 ## Consumo de API pública
-`https://dog.ceo/dog-api/documentation/` 
+https://dog.ceo/dog-api/documentation/ 
 
 ## URL Prod:
-`https://main.d2t9i4brlk3x5o.amplifyapp.com/login`
+https://main.d2t9i4brlk3x5o.amplifyapp.com/login
 
 ## Integrantes:
 * Bleile, Franco
