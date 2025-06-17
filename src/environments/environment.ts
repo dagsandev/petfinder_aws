@@ -36,13 +36,11 @@ export const environment = {
 
   // Cognito config para auth/login
   cognito: {
-    //domain: 'https://cognito-idp.us-east-1.amazonaws.com/us-east-1_TNM3wqqf8',
-    domain: 'https://us-east-1vzbsecktm.auth.us-east-1.amazoncognito.com',
+    authority: 'https://cognito-idp.us-east-1.amazonaws.com/us-east-1_VzbseCktm',
     clientId: '4hg4dihcralsa2udctlncg2ns1',
-    //redirectUri: 'http://localhost:8100/tabs',
-    redirectUri: 'https://main.d2t9i4brlk3x5o.amplifyapp.com/tabs/tab1',
+    //redirectUrl: 'https://d84l1y8p4kdic.cloudfront.net',
+    redirectUrl: 'https://main.d2t9i4brlk3x5o.amplifyapp.com/tabs/tab1',
     postLogoutRedirectUri: 'https://main.d2t9i4brlk3x5o.amplifyapp.com/login',
-    //postLogoutRedirectUri: 'http://localhost:8100/login',
     scope: 'openid email phone',
     responseType: 'code'
   }
