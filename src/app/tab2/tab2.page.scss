@@ -1,20 +1,230 @@
-ion-title{
-    max-width: 100%;
+/* src/app/tab2/tab2.page.scss */
+
+/* Variables CSS Globales */
+:root {
+  --ion-color-primary: #5cb85c;
+  --ion-color-primary-shade: #4CAF50;
+  --ion-color-secondary: #607d8b;
+  --ion-color-tertiary: #ffc107;
+  --ion-color-light: #f4f5f8;
+  --ion-color-dark: #222428;
+  --ion-color-medium: #92949c;
+
+  --text-color-dark: #333;
+  --text-color-medium: #555;
+  --card-bg-light: rgba(255, 255, 255, 0.9);
+  --shadow-light: rgba(0, 0, 0, 0.1);
+  --border-color-light: #ddd;
 }
 
+/* Estilos de la barra de navegación y el título */
+ion-title {
+  max-width: 100%;
+  font-weight: 600;
+  color: var(--text-color-dark);
+}
+
+/* Estilos del contenido principal y su fondo */
 ion-content {
-    position: relative;
-    --background: none; /* Eliminar el fondo predeterminado */
+  position: relative;
+  --background: none;
+}
+
+ion-content::before {
+  content: '';
+  background: url('../../assets/Dog_face_pattern_and_bones.jpg') no-repeat center center/cover;
+  opacity: 0.35;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: grayscale(20%);
+}
+
+/* Estilos generales de botones */
+ion-button {
+  --background: var(--ion-color-primary);
+  --background-activated: var(--ion-color-primary-shade);
+  --background-hover: var(--ion-color-primary-shade);
+  --color: white;
+  --border-radius: 8px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease-in-out;
+}
+
+ion-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px var(--shadow-light);
+}
+
+/* Estilo específico del botón para alternar la selección de raza */
+ion-toolbar ion-button {
+  --background: rgba(0, 153, 255, 0.925);
+  --background-activated: #333;
+  --background-hover: #333;
+}
+
+/* Estilos generales de las tarjetas (raza y publicaciones) */
+ion-card {
+  background: white;
+  color: black;
+  max-width: 340px;
+  margin: 16px auto;
+  text-align: left;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px var(--shadow-light);
+  transition: transform 0.2s ease-in-out;
+  border: 1px solid var(--border-color-light);
+}
+
+ion-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos de imágenes dentro de las tarjetas */
+ion-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  display: block;
+}
+
+/* Estilos del encabezado de las tarjetas */
+ion-card-header {
+  padding: 16px;
+}
+
+/* Estilos del título de las tarjetas */
+ion-card-title {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+/* Estilos del subtítulo de las tarjetas */
+ion-card-subtitle {
+  color: var(--ion-color-medium);
+  font-size: 0.9rem;
+}
+
+/* Estilos del contenido de las tarjetas */
+ion-card-content {
+  padding: 16px;
+  font-size: 0.95rem;
+  color: black;
+  line-height: 1.5;
+}
+
+/* Estilos de elementos de lista (ion-item) */
+ion-item {
+  --background: white;
+  --border-radius: 12px;
+  --box-shadow: 0 4px 10px var(--shadow-light);
+  margin-top: 16px;
+  margin-bottom: 16px;
+  color: black;
+}
+
+/* Estilos de etiquetas de elementos de lista */
+ion-label {
+  font-weight: 600;
+  color: black;
+}
+
+/* Estilos de selectores (ion-select) */
+ion-select {
+  --placeholder-color: var(--ion-color-medium);
+  color: black;
+}
+
+/* Estilos del contenedor del carrusel de publicaciones */
+.publicaciones-carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+/* Estilos de la cuadrícula de publicaciones dentro del carrusel */
+.publicaciones-grid {
+  display: flex;
+  overflow-x: hidden;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Estilos específicos de tarjetas de publicación dentro de la cuadrícula */
+.publicaciones-grid ion-card {
+  min-width: 280px;
+  max-width: 320px;
+  flex: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+
+  /* Ajustes para pantallas más pequeñas (móviles) */
+  @media (max-width: 600px) {
+    min-width: calc(100% - 30px); /* Ocupa casi todo el ancho de la pantalla */
+    max-width: calc(100% - 30px);
   }
-  
-  ion-content::before {
-    content: '';
-    background: url('../../assets/Dog_face_pattern_and_bones.jpg') no-repeat center center/cover;
-    opacity: 0.50; /* Aplica opacidad solo a la imagen */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* Asegura que esté detrás del contenido */
+  @media (max-width: 400px) {
+    min-width: calc(100% - 20px);
+    max-width: calc(100% - 20px);
   }
+}
+
+/* Estilos del título de la sección */
+.section-title {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 1.6em;
+  color: var(--ion-color-primary, #3880ff);
+}
+
+/* Estilos de botones de navegación (flechas) */
+ion-button[fill="clear"] {
+  --padding-start: 5px;
+  --padding-end: 5px;
+  --min-width: 40px;
+}
+
+/* Estilos de los iconos de flecha */
+ion-icon[name="chevron-back-outline"],
+ion-icon[name="chevron-forward-outline"] {
+  font-size: 2.5em;
+  color: var(--ion-color-medium);
+}
+
+/* Ajustes de la barra de herramientas en contenedores flex */
+ion-toolbar.flex {
+  --background: transparent;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Ajustes de texto y encabezados en secciones */
+h2 {
+  color: black;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+/* Ajustes de padding en secciones principales flex */
+.flex-col.h-full > div {
+  padding: 16px;
+}
+
+/* Estilos del borde inferior */
+.border-b {
+  border-color: rgba(0, 0, 0, 0.08);
+}
