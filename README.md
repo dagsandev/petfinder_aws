@@ -9,6 +9,8 @@ Reutilización del proyecto "Pet Finder" desarrollado en la materia "Desarrollo 
 * Ionic
 * AWS Cognito
 * AWS Amplify
+* AWS API Gateway
+* AWS Lambda
 
 ## Consumo de API pública
 https://dog.ceo/dog-api/documentation/ 
