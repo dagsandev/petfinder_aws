@@ -35,7 +35,7 @@ export class Tab2Page implements OnInit {
     this.razasPerros.forEach((perro) => {
       this.apiService.obtenerImagenPorRaza(perro.nombre.toLowerCase()).subscribe(
         (data) => {
-          perro.imagen = data.message; // Asegúrate de que 'message' es la propiedad correcta
+          perro.imagen = data.message;
         },
         (error) => {
           console.error('Error al obtener imagen para la raza', perro.nombre, error);
@@ -52,7 +52,6 @@ export class Tab2Page implements OnInit {
     next: () => {
       alert('Perro favorito guardado!');
 
-      // Guardar localmente
       let favoritos = JSON.parse(localStorage.getItem('favoritos') || '[]');
       favoritos.push(favorito);
       localStorage.setItem('favoritos', JSON.stringify(favoritos));
