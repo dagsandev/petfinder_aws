@@ -35,7 +35,7 @@ export class Tab2Page implements OnInit {
     this.razasPerros.forEach((perro) => {
       this.apiService.obtenerImagenPorRaza(perro.nombre.toLowerCase()).subscribe(
         (data) => {
-          perro.imagen = data.message; // Asegúrate de que 'message' es la propiedad correcta
+          perro.imagen = data.message;
         },
         (error) => {
           console.error('Error al obtener imagen para la raza', perro.nombre, error);
@@ -44,4 +44,25 @@ export class Tab2Page implements OnInit {
       );
     });
   }
+
+  agregarAFavoritos(perro: any) {
+  const favorito = { userId: 'usuario123', dogName: perro.nombre, imagen: perro.imagen };
+
+  this.apiService.guardarFavorito(favorito).subscribe({
+    next: () => {
+      alert('Perro favorito guardado!');
+
+      let favoritos = JSON.parse(localStorage.getItem('favoritos') || '[]');
+      favoritos.push(favorito);
+      localStorage.setItem('favoritos', JSON.stringify(favoritos));
+    },
+    error: (err) => {
+      console.error('Error al guardar favorito:', err);
+      alert('Error al guardar favorito');
+    },
+  });
+}
+
+
+
 }

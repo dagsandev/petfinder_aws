@@ -1,6 +1,7 @@
 export const environment = {
   production: true,
   apiUrl: 'https://dog.ceo/api/',
+  AWS_API_URL: 'https://4ghldnnv3b.execute-api.us-east-1.amazonaws.com/',
 
   // Cognito config para auth/login
   cognito: {

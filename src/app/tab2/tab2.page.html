@@ -7,6 +7,9 @@
       <p>Tamaño: {{ raza.tamano }}</p>
       <p>Carácter: {{ raza.caracter }}</p>
       <p>Promedio de vida: {{ raza.promedioVida }}</p>
+      <ion-button slot="end" color="primary" (click)="agregarAFavoritos(raza)">
+        <ion-icon slot="icon-only" name="heart-outline"></ion-icon>
+      </ion-button>
     </div>
   </div>
 </ion-content>
