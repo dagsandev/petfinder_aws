@@ -8,19 +8,24 @@
 }
 
 .titulo-inicio h1{
-  font-size: 4rem;
-  font-family: "Dancing Script", cursive;
-  font-optical-sizing: auto;
-  font-weight: bold;
-  font-style: normal;
-  color: rgba(0, 153, 255, 0.925);
-  letter-spacing: 0.25rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #2c3e50;
+  text-decoration: underline;
+  margin-bottom: 1rem;
 }
 
 .parrafo-inicio{
-  text-align: center;
-  padding: 1.6rem;
+  margin-top: 2rem;
   font-size: 1.5rem;
+  text-align: center;
+  color: #555;
+  max-width: 800px;
+  margin-bottom: 2.5rem;
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .boton-perdidos{
@@ -28,7 +33,9 @@
 }
 
 .boton-perdidos ion-button{
-  --background: rgba(0, 153, 255, 0.925);
+  margin-top: 2.5rem;
+  --background: rgba(224, 163, 83, 0.925);
+  border: 2px solid rgb(131, 100, 42);
   width: 20rem;
   height: 3rem;
 }
@@ -40,7 +47,8 @@
 }
 
 .boton-encontrados ion-button{
-  --background: rgba(0, 153, 255, 0.925);
+  border: 2px solid rgb(131, 100, 42);
+  --background: rgba(224, 163, 83, 0.925);
   width: 20rem;
   height: 3rem;
 }
