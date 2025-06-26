@@ -3,14 +3,15 @@ ion-card {
     --border-radius: 10px;
     --background: #fff;
   }
-  
+
   ion-avatar img {
     border-radius: 50%;
   }
-  
+
   ion-button {
-    margin-top: 10px;
+    margin-top: 2px;
     --background: rgb(0, 68, 255);
+    color: white;
   }
 
   .boton-publicacion{
@@ -23,20 +24,15 @@ ion-card {
       padding: 20px;
     }
   }
-  
-  ion-item {
-    margin-bottom: 20px;
-  }
 
   ion-content {
     position: relative;
     --background: none; /* Eliminar el fondo predeterminado */
   }
-  
+
   ion-content::before {
     content: '';
-    background: url('../../assets/Dog_face_pattern_and_bones.jpg') no-repeat center center/cover;
-    opacity: 0.50; /* Aplica opacidad solo a la imagen */
+    background: url('../../../img/d63ce8115fab52bec3dcc6e0c426a3da.jpg') no-repeat center center/cover;
     position: absolute;
     top: 0;
     left: 0;
