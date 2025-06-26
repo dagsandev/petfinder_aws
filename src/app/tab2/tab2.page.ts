@@ -44,4 +44,26 @@ export class Tab2Page implements OnInit {
       );
     });
   }
+
+  agregarAFavoritos(perro: any) {
+  const favorito = { userId: 'usuario123', dogName: perro.nombre, imagen: perro.imagen };
+
+  this.apiService.guardarFavorito(favorito).subscribe({
+    next: () => {
+      alert('Perro favorito guardado!');
+
+      // Guardar localmente
+      let favoritos = JSON.parse(localStorage.getItem('favoritos') || '[]');
+      favoritos.push(favorito);
+      localStorage.setItem('favoritos', JSON.stringify(favoritos));
+    },
+    error: (err) => {
+      console.error('Error al guardar favorito:', err);
+      alert('Error al guardar favorito');
+    },
+  });
+}
+
+
+
 }

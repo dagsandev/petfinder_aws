@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Mis Favoritos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list *ngIf="favoritos.length > 0; else sinFavoritos">
+    <ion-item *ngFor="let perro of favoritos, let i = index">
+      <ion-thumbnail slot="start">
+        <img [src]="perro.imagen || 'ruta/por_defecto.jpg'" />
+      </ion-thumbnail>
+      <ion-label>
+        <h2>{{ perro.dogName }}</h2>
+      </ion-label>
+      <ion-button slot="end" color="danger" (click)="eliminarFavorito(i)">
+        Eliminar
+      </ion-button>
+    </ion-item>
+  </ion-list>
+
+  <ng-template #sinFavoritos>
+    <p>No hay perros favoritos guardados.</p>
+  </ng-template>
+</ion-content>

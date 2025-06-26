@@ -13,6 +13,7 @@ import { environment } from 'src/environments/environment';
 })
 export class ApiService {
   private baseUrl = environment.apiUrl;
+  private AWS_API_URL = environment.AWS_API_URL;
 
   /**
    * Crea una instancia del servicio ApiService.
@@ -45,4 +46,9 @@ export class ApiService {
   obtenerImagenPorRaza(raza: string): Observable<any> {
     return this.http.get(`${this.baseUrl}breed/${raza}/images/random`);
   }
+
+  //implementación para AWS proyect
+  guardarFavorito(favorito: { userId: string; dogName: string }): Observable<any> {
+  return this.http.post(`${this.AWS_API_URL}favoritos`, favorito);
+}
 }

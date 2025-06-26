@@ -33,6 +33,10 @@ export class Tab1Page {
   navegarAPerrosPerdidos() {
      this.router.navigate(['/perros-encontrados']);
   }
+
+  navegarAFavoritos(){
+    this.router.navigate(['/favoritos']);
+  }
 }
 
 // export class Tab1Page {
