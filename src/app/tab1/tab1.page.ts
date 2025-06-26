@@ -6,7 +6,7 @@ import { OidcSecurityService } from 'angular-auth-oidc-client';
 /**
  * Componente de la pestaña 1.
  * Proporciona navegación a las páginas de perros perdidos y perros encontrados.
- * 
+ *
  * @component
  */
 @Component({
@@ -31,7 +31,7 @@ export class Tab1Page {
       this.router.navigate(['/perros-encontrados']);
   }
   navegarAPerrosPerdidos() {
-     this.router.navigate(['/perros-encontrados']);
+     this.router.navigate(['/perros-perdidos']);
   }
 
   navegarAFavoritos(){
@@ -43,7 +43,7 @@ export class Tab1Page {
 
 //   /**
 //    * Crea una instancia del componente Tab1Page.
-//    * 
+//    *
 //    * @param {Router} router - Router de Angular para la navegación entre páginas.
 //    * @param {AuthService} authService - Servicio de autenticación para verificar el estado de sesión del usuario.
 //    */
@@ -51,7 +51,7 @@ export class Tab1Page {
 
 //   /**
 //    * Navega a la página de perros perdidos.
-//    * 
+//    *
 //    * @function
 //    * @returns {void}
 //   */
@@ -61,9 +61,9 @@ export class Tab1Page {
 
 //   /**
 //    * Navega a la página de perros encontrados.
-//    * 
+//    *
 //    * @function
-//    * @returns {void} 
+//    * @returns {void}
 //    */
 //   navegarAPerrosEncontrados() {
 //     this.router.navigate(['/perros-encontrados']);
@@ -72,7 +72,7 @@ export class Tab1Page {
 //   /**
 //    * Verifica si el usuario está autenticado cada vez que la vista se va a mostrar.
 //    * Si el usuario no está autenticado, redirige a la página de login.
-//    * 
+//    *
 //    * @function
 //    * @returns {void}
 //    */

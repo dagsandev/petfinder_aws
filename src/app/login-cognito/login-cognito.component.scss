@@ -1,42 +1,72 @@
 .fondo {
-  background-image: url("../../assets/iStock-518012153.jpg");
-  --background: linear-gradient(180deg, #ffded4, #ec9955);
-  color: white;
+  --background: linear-gradient(to bottom right, #f9e0d9, #f7b791);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.container {
+.login-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  height: 100%;
   padding: 2rem;
-  padding-top: 5rem;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .imagen-izquierda img {
-  width: 700px;
-  max-width: 40vw;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-.contenido-central {
+.login-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 2rem;
+  text-align: center;
+  max-width: 400px;
+  padding: 1.5rem;
+  background-color: #ffffffcc;
+  border-radius: 1.5rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
 }
 
 .logo {
-  width: 300px;
+  width: 250px;
+  margin-bottom: 1rem;
 }
 
 .titulo {
-  font-size: 4rem;
-  font-weight: bold;
-  color: rgb(30, 62, 204);
+  font-size: 3rem;
+  color: #2c3e50;
+  font-weight: 700;
+  margin: 0;
+}
+
+.subtitulo {
+  font-size: 1.2rem;
+  color: #444;
+  margin: 1rem 0 2rem 0;
+  font-weight: 400;
 }
 
 .botonInicio {
   --background: #d3743c;
-  --color: #000000;
+  --background-hover: #bb5f2c;
+  --color: #fff;
   font-weight: bold;
+  width: 100%;
+  font-size: 1.1rem;
+  border-radius: 2rem;
+  padding: 0.8rem;
+  box-shadow: 0 6px 12px rgba(211, 116, 60, 0.3);
 }

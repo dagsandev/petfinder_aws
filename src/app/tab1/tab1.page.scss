@@ -43,7 +43,7 @@
 .boton-encontrados{
   text-align: center;
   padding-top: 1.2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1.2rem;
 }
 
 .boton-encontrados ion-button{
@@ -55,12 +55,11 @@
 
 .btn-favoritos{
     text-align: center;
-  padding-top: 1.2rem;
-  padding-bottom: 2rem;  
 }
 
 .btn-favoritos ion-button{
-  --background: rgba(0, 153, 255, 0.925);
+  border: 2px solid rgb(65, 46, 12);
+  --background: rgba(141, 92, 27, 0.925);
   width: 20rem;
   height: 3rem;
 }
@@ -75,8 +74,7 @@ ion-content {
 
 ion-content::before {
   content: '';
-  background: url('../../assets/Dog_face_pattern_and_bones.jpg') no-repeat center center/cover;
-  opacity: 0.65; /* Aplica opacidad solo a la imagen */
+  background: url('../../../img/d63ce8115fab52bec3dcc6e0c426a3da.jpg') no-repeat center center/cover;
   position: absolute;
   top: 0;
   left: 0;
